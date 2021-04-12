@@ -12,7 +12,7 @@
     android:layout_marginBottom="4dp"
     android:elevation="10dp">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:padding="8dp">
@@ -21,15 +21,22 @@
             android:id="@+id/img_user_photo"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
             tools:src="@color/accent" />
+
         <TextView
             android:id="@+id/tv_username"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Username"
+            android:layout_marginStart="16dp"
             android:layout_toEndOf="@id/img_user_photo"
-            android:layout_marginLeft="16dp"
-            android:textStyle="bold" />
-    </RelativeLayout>
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/img_user_photo"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="Username" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
