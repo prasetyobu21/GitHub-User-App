@@ -7,7 +7,6 @@ import android.view.KeyEvent
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dicoding.githubuser.R
 import com.dicoding.githubuser.databinding.ActivityMainBinding
 import com.dicoding.githubuser.model.UserSearch
 import com.dicoding.githubuser.viewmodel.SearchViewModel
@@ -55,10 +54,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         viewModel.getSearchResult().observe(this, {
-            if (it != null) {
                 adapter.setList(it)
                 showLoading(false)
-            }
         })
     }
 

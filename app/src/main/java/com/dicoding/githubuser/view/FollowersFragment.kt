@@ -76,10 +76,8 @@ class FollowersFragment : Fragment() {
         showLoading(true)
 
         viewModel.getFollowers().observe(viewLifecycleOwner, {
-            if (it != null) {
                 adapter.setList(it)
                 showLoading(false)
-            }
         })
     }
 

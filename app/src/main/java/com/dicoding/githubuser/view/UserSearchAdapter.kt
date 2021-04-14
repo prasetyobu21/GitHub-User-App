@@ -1,17 +1,11 @@
 package com.dicoding.githubuser.view
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.appcompat.view.menu.MenuView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.bumptech.glide.request.RequestOptions
 import com.dicoding.githubuser.databinding.ItemCardviewUserSearchBinding
 import com.dicoding.githubuser.model.UserSearch
-import de.hdodenhof.circleimageview.CircleImageView
 
 class UserSearchAdapter : RecyclerView.Adapter<UserSearchAdapter.UserSearchViewHolder>() {
 
@@ -32,7 +26,7 @@ class UserSearchAdapter : RecyclerView.Adapter<UserSearchAdapter.UserSearchViewH
         notifyDataSetChanged()
     }
 
-    inner class UserSearchViewHolder(val binding: ItemCardviewUserSearchBinding) :
+    inner class UserSearchViewHolder(private val binding: ItemCardviewUserSearchBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(user: UserSearch) {
             binding.root.setOnClickListener {

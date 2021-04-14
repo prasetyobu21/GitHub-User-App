@@ -38,7 +38,6 @@ class FollowingFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(R.layout.fragment_following, container, false)
     }
 
@@ -77,10 +76,8 @@ class FollowingFragment : Fragment() {
         showLoading(true)
 
         viewModel.getFollowing().observe(viewLifecycleOwner, {
-            if (it != null) {
                 adapter.setList(it)
                 showLoading(false)
-            }
         })
     }
 

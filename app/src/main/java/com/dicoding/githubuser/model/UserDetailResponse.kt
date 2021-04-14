@@ -1,6 +1,7 @@
 package com.dicoding.githubuser.model
 
 data class UserDetailResponse(
+    val id: Int,
     val login: String,
     val name: String,
     val avatar_url: String,

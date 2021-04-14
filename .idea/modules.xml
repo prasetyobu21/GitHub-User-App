@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/GithubUser.iml" filepath="$PROJECT_DIR$/.idea/modules/GithubUser.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GithubUser.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GithubUser.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumerapp/GithubUser.consumerapp.iml" filepath="$PROJECT_DIR$/.idea/modules/consumerapp/GithubUser.consumerapp.iml" />
     </modules>
   </component>
 </project>

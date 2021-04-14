@@ -12,11 +12,7 @@ class FollowerSectionPagerAdapter(
     data: Bundle
 ) : FragmentStateAdapter(activity) {
 
-    private var fragmentBundle: Bundle
-
-    init {
-        fragmentBundle = data
-    }
+    private var fragmentBundle: Bundle = data
 
     override fun getItemCount(): Int {
         return 2
